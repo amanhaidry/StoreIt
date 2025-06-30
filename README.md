@@ -2,7 +2,7 @@
 
 StoreIt is a full-stack web application for managing online storage, similar to Google Drive or OneDrive. Built with modern technologies like Next.js, Appwrite, TypeScript, and shadcn/ui, it provides a seamless and secure experience for storing, sharing, and managing your files online.
 
-![StoreIt Screenshot](./screenshots/screenshot.png)
+![StoreIt Screenshot](./screenshots/Screenshot.png)
 
 [Live Project](https://store-it-beta-pied.vercel.app)
 
