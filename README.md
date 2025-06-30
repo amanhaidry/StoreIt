@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StoreIt
 
-## Getting Started
+StoreIt is a full-stack web application for managing online storage, similar to Google Drive or OneDrive. Built with modern technologies like Next.js, Appwrite, TypeScript, and shadcn/ui, it provides a seamless and secure experience for storing, sharing, and managing your files online.
 
-First, run the development server:
+![StoreIt Screenshot](./screenshots/screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Live Project](https://store-it-beta-pied.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **User Authentication:** Sign up, log in, and log out securely.
+- **File Management:** Upload, update, and delete files with ease.
+- **File Sharing:** Share files with other users via email or link.
+- **User Dashboard:** View and manage your files in a clean, responsive interface.
+- **Real-time Updates:** See changes reflected instantly.
+- **Secure Storage:** All files and user data are securely managed via Appwrite.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js:** React-based framework for server-side rendering and routing.
+- **TypeScript:** Strongly-typed language for safer and more maintainable code.
+- **Appwrite:** Backend-as-a-Service for authentication, database, and file storage.
+- **shadcn/ui:** Beautiful, accessible UI components for a modern look and feel.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **Radix UI:** Accessible, unstyled UI primitives for building custom components.
+- **React Hook Form & Zod:** For robust form handling and validation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, shadcn/ui, Radix UI
+- **Backend:** Appwrite (cloud instance)
+- **State Management:** Appwrite SDK, React hooks
+- **Validation:** Zod, React Hook Form
+
+---
+
+## Running Locally
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/amanhaidry/StoreIt.git
+    cd storeit
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Set up environment variables:**
+
+    Create a `.env.local` file in the root directory and add the following (replace with your own Appwrite credentials if needed):
+
+    ```env
+    NEXT_PUBLIC_APPWRITE_ENDPOINT="https://nyc.cloud.appwrite.io/v1"
+    NEXT_PUBLIC_APPWRITE_PROJECT="your_project_id"
+    NEXT_PUBLIC_APPWRITE_DATABASE="your_database_id"
+    NEXT_PUBLIC_APPWRITE_USERS_COLLECTION="your_users_collection_id"
+    NEXT_PUBLIC_APPWRITE_FILES_COLLECTION="your_files_collection_id"
+    NEXT_PUBLIC_APPWRITE_BUCKET="your_bucket_id"
+    NEXT_APPWRITE_KEY="your_appwrite_key"
+    ```
+
+4. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+5. **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+---
+
+
+**Happy Coding!**
